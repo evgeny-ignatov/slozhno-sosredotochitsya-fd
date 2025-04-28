@@ -117,3 +117,14 @@
 .card-title {
   font-weight: var(--title-font-weight, 700);
 }
+
+.content__section-gallery {
+  display: grid;
+  gap: 10px;
+}
+
+.gallery-image {
+  inline-size: 100%;
+  block-size: 100%;
+}
+
