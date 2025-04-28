@@ -100,6 +100,7 @@
 
 .content__section {
   display: grid;
+  grid-template-columns: 1fr;
   gap: 20px;
 }
 
@@ -120,6 +121,7 @@
 
 .content__section-gallery {
   display: grid;
+  grid-template-columns: 1fr;
   gap: 10px;
 }
 
@@ -128,3 +130,15 @@
   block-size: 100%;
 }
 
+.footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+  height: max(668px, 100vh);
+  padding: 10px;
+}
+
+.footer__title {
+  text-shadow: 2px 2px 0 var(--accent-color, #ff0070);
+}
