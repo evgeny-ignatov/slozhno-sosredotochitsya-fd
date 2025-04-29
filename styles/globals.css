@@ -41,4 +41,8 @@ a {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+  text-transform: inherit;
+  background-color: inherit;
+  border: inherit;
+  text-decoration: inherit;
 }
