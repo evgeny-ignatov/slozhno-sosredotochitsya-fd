@@ -2,7 +2,7 @@
 
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
-  font-family: var(--main-font-family, sans-serif);
+  font-family: var(--main-font-family, monospace);
   font-size: var(--main-text-size, 18px);
   font-weight: var(--main-font-weight, 400);
   line-height: var(--main-line-height, 1.3);
@@ -35,8 +35,8 @@
   inset: var(--section-padding, 10px) var(--section-padding, 10px) auto auto;
   inline-size: 25px;
   block-size: 25px;
-  border-top: 1px solid var(--accent-color, #ff0070);
-  border-right: 1px solid var(--accent-color, #ff0070);
+  border-top: 1px solid var(--section-title-color, #ff0070);
+  border-right: 1px solid var(--section-title-color, #ff0070);
 }
 
 .decorated-zone::after {
@@ -45,8 +45,8 @@
   inset: auto auto var(--section-padding, 10px) var(--section-padding, 10px);
   inline-size: 25px;
   block-size: 25px;
-  border-bottom: 1px solid var(--accent-color, #ff0070);
-  border-left: 1px solid var(--accent-color, #ff0070);
+  border-bottom: 1px solid var(--section-title-color, #ff0070);
+  border-left: 1px solid var(--section-title-color, #ff0070);
 }
 
 .header__decorative-element {
@@ -106,7 +106,7 @@
 }
 
 .header__theme-menu-button:focus-visible {
-  box-shadow: 0 1px var(--section-title-color, #ff0070);
+  box-shadow: 0 1px currentColor;
 }
 
 .title {
@@ -167,8 +167,7 @@
 }
 
 .card-link:hover {
-  text-decoration: underline;
-  text-underline-offset: 3px;
+  border-bottom: 1px solid currentColor;
 }
 
 .card-link:focus {
